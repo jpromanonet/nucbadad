@@ -1,0 +1,197 @@
+@import url(https://fonts.googleapis.com/css?family=Bonbon);
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: #000814;
+  overflow: hidden;
+}
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 10%;
+}
+
+h1 {
+  color: white;
+  font-family: "Bonbon";
+  position: relative;
+  top: 210px;
+  font-size: 3rem;
+}
+
+/*tree*/
+
+.triangle1,
+.triangle2,
+.triangle3 {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: #006400;
+  height: 100px;
+  width: 100px;
+}
+
+.triangle1 {
+  height: 100px;
+  width: 100px;
+}
+
+.triangle2 {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  bottom: 60px;
+}
+
+.triangle3 {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  bottom: 160px;
+}
+
+.trunk {
+  height: 60px;
+  width: 50px;
+  background-color: brown;
+  position: relative;
+  bottom: 161px;
+}
+
+.star {
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  position: relative;
+  top: 15px;
+}
+
+.ball1,
+.ball2,
+.ball3,
+.ball4,
+.ball5,
+.ball6 {
+  height: 20px;
+  width: 20px;
+  background-color: #ffadad;
+  border-radius: 50%;
+  position: relative;
+}
+
+.ball1 {
+  bottom: 450px;
+  animation: glow1 3s infinite;
+}
+
+.ball2 {
+  bottom: 400px;
+  right: 20px;
+  background-color: #9bf6ff;
+  animation: glow2 3s infinite;
+}
+
+.ball3 {
+  bottom: 400px;
+  left: 30px;
+  background-color: #fdffb6;
+  animation: glow3 3s infinite;
+}
+
+.ball4 {
+  bottom: 360px;
+  background-color: #ffd6a5;
+  animation: glow4 3s infinite;
+}
+
+.ball5 {
+  bottom: 340px;
+  right: 40px;
+  background-color: #bdb2ff;
+  animation: glow5 3s infinite;
+}
+
+.ball6 {
+  bottom: 360px;
+  left: 50px;
+  background-color: #ffc6ff; 
+  animation: glow6 3s infinite;
+}
+
+/*snowfall*/
+.fa-snowflake {
+	color: white;
+	position: absolute;
+	top: -20px;
+	animation: fall linear forwards;
+}
+
+/*animation*/
+
+@keyframes glow1 {
+  from {
+    box-shadow: 0 0 5px -5px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 5px 5px #f7cbcb;
+  }
+}
+
+@keyframes glow2 {
+  from {
+    box-shadow: 0 0 5px -5px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 5px 5px #c5f7fc;
+  }
+}
+
+@keyframes glow3 {
+  from {
+    box-shadow: 0 0 5px -5px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 5px 5px #f9faca;
+  }
+}
+
+@keyframes glow4 {
+  from {
+    box-shadow: 0 0 5px -5px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 5px 5px #fae0c0;
+  }
+}
+
+@keyframes glow5 {
+  from {
+    box-shadow: 0 0 5px -5px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 5px 5px #cdc6f7;
+  }
+}
+
+@keyframes glow6 {
+  from {
+    box-shadow: 0 0 5px -5px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 5px 5px #fad9fa;
+  }
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(105vh);
+	}
+}
